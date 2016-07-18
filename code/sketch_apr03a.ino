@@ -1,21 +1,4 @@
-#include <Wire.h>
-#include <BH1750.h>
-#include "DHT.h"
-#include <MsTimer2.h>
-
-#define DHTPIN 2     // what digital pin we're connected to
-#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
-DHT dht(DHTPIN, DHTTYPE);
-
-BH1750 lightMeter;
-
-#define CO A0
-#define Gas A2
-#define QRE1113_Pin 3
-int outputValue=0;
-int outputValue1=0;
-int i=0;
-int counter = 0;
+0;
 int tracker = 0;
 void setup() {
   pinMode(CO,INPUT);
